@@ -3,7 +3,7 @@
 LecTrace does not trace files whose name starts with an underscore, so the bulk numpy code lives here and the lecture
 shows only the steps that matter.  Nothing is simulated: the weights are the trained `no_llm` checkpoint of the project
 (checkpoints/no_llm_s1.pt, converted to .npz by tools/export_weights.py), the patient is test patient 139655 of split 1,
-and every "recorded" number is read from a result file in ./data (see README.md for the origin of each file).
+and every "recorded" number is read from a result file in ./data (the `_source` field of each file names its origin).
 """
 
 from __future__ import annotations

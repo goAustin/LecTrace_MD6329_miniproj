@@ -1,5 +1,5 @@
 {
-  "_source": "Numbers that cannot be recomputed from the small files in ./data. Copied (not re-derived) from dl_proj/report/BRIEF.md sections 3, 4.6 and 5 and from the result files named in each block. See README.md.",
+  "_source": "Numbers that cannot be recomputed from the small files in ./data. Copied (not re-derived) from dl_proj/report/BRIEF.md sections 3, 4.6 and 5 and from the result files named in each block.",
   "cohort": {
     "_source": "BRIEF section 3 and results/data_audit.md (19 integrity checks)",
     "patients": 11988, "deaths": 1707, "death_rate": 0.1424, "variables": 36, "hours": 48,

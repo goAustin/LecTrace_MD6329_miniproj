@@ -3,7 +3,7 @@
     python3 tools/verify_numbers.py
 
 The reference values below are typed in from dl_proj/report/BRIEF.md (sections 3 and 5) and from the project's result
-files (see README.md).  The script (1) recomputes metrics from the bundled prediction files with scikit-learn,
+files (the `_source` field of each file in ./data names its origin).  The script (1) recomputes metrics from the bundled prediction files with scikit-learn,
 (2) builds the lecture into a temporary folder, and (3) checks that the lecture's text, tables and variables show
 exactly these numbers.  It exits with a non-zero status if anything differs.
 """

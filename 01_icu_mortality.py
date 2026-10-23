@@ -5,7 +5,6 @@ trained from scratch (`no_llm`) against Llemr-v1, a 7.1B-parameter EHR language 
 
 Live vs. recorded: everything the small model does is computed here, in numpy, with its trained weights.
 Llemr (7.1B parameters) cannot run in a browser, so its numbers are read from the result files of the project.
-README.md says where every data file comes from.
 """
 
 from __future__ import annotations
