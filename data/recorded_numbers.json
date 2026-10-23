@@ -1,0 +1,27 @@
+{
+  "_source": "Numbers that cannot be recomputed from the small files in ./data. Copied (not re-derived) from dl_proj/report/BRIEF.md sections 3, 4.6 and 5 and from the result files named in each block. See README.md.",
+  "cohort": {
+    "_source": "BRIEF section 3 and results/data_audit.md (19 integrity checks)",
+    "patients": 11988, "deaths": 1707, "death_rate": 0.1424, "variables": 36, "hours": 48,
+    "train": 9590, "validation": 1199, "test": 1199, "test_deaths": 158
+  },
+  "no_llm": {
+    "_source": "results/e1/no_llm_s1.json (parameters, training time); results/e2/e2_s1.csv (AUPRC)",
+    "parameters": 288961, "train_seconds": 30.0, "test_auprc": 0.5393478867286824, "test_auprc_value_shuffle": 0.20301411387562993
+  },
+  "llemr": {
+    "_source": "results/llemr/llemr_ft_s1.json and BRIEF section 5 (cost and compute)",
+    "trained_parameters": 340811777, "total_parameters": 7100227586,
+    "train_seconds": 4538.8700523376465, "validation_seconds": 335.61746430397034,
+    "peak_cuda_memory_bytes": 21344446464,
+    "test_auroc": 0.7950607376062452, "test_auprc": 0.408801378924946
+  },
+  "llemr_continuation_post_hoc": {
+    "_source": "results/llemr/llemr_ft_s1_ext.json; run after the pre-registered result was known (post hoc)",
+    "train_seconds": 6813.000995874405, "test_auroc": 0.7823781903962841, "test_auprc": 0.3782463248539616
+  },
+  "preregistration": {
+    "_source": "results/llemr_preregistration.json (recorded 2026-10-22T06:05:50Z, before any Llemr result)",
+    "sha256": "c637e496b060adc7b93689cb779518ff8b0142ae6ca3a98c7adafdd643c53ab0"
+  }
+}

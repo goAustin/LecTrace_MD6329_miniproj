@@ -1,0 +1,20 @@
+{
+ "_source": "dl_proj/demo/_cache/patient.json (copied unchanged except for this line)",
+ "record_id": 139655,
+ "row": 2821,
+ "split": 1,
+ "raw_file": "set-a/139655.txt",
+ "in_hospital_death": 0,
+ "saps1": 16,
+ "sofa": 8,
+ "length_of_stay_days": 7,
+ "static": {
+  "age": 72,
+  "gender": "male",
+  "height_cm": 175.3,
+  "icu_type": "cardiac surgery recovery unit",
+  "weight_kg": 90.7
+ },
+ "n_raw_rows": 433,
+ "n_events_used_by_the_model": 391
+}

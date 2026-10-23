@@ -1,0 +1,6 @@
+{
+ "_source": "excerpt of dl_proj/artifacts/stats_split1.json (the Lactate row); statistics of the 9,590 training patients of split 1",
+ "clip_percentiles": [0.5, 99.5],
+ "n_train_patients": 9590,
+ "Lactate": {"lo": 0.6000000238418579, "hi": 15.300000190734863, "mean": 2.9484416185198272, "std": 2.4385039385432394, "n": 19347}
+}

@@ -1,0 +1,37 @@
+variable,llemr_event_type,mimic_table,mimic_itemid,fluid,label,category,unit,factor,p12_unit,note
+ALP,labevents,labevents,50863,Blood,Alkaline Phosphatase,Chemistry,IU/L,1,IU/L,
+ALT,labevents,labevents,50861,Blood,Alanine Aminotransferase (ALT),Chemistry,IU/L,1,IU/L,
+AST,labevents,labevents,50878,Blood,Asparate Aminotransferase (AST),Chemistry,IU/L,1,IU/L,
+Albumin,labevents,labevents,50862,Blood,Albumin,Chemistry,g/dL,1,g/dL,
+BUN,labevents,labevents,51006,Blood,Urea Nitrogen,Chemistry,mg/dL,1,mg/dL,
+Bilirubin,labevents,labevents,50885,Blood,"Bilirubin, Total",Chemistry,mg/dL,1,mg/dL,
+Cholesterol,labevents,labevents,50907,Blood,"Cholesterol, Total",Chemistry,mg/dL,1,mg/dL,
+Creatinine,labevents,labevents,50912,Blood,Creatinine,Chemistry,mg/dL,1,mg/dL,
+DiasABP,labevents,chartevents,220051,,Arterial Blood Pressure diastolic,,mmHg,1,mmHg,
+FiO2,labevents,chartevents,223835,,Inspired O2 Fraction,,,100,fraction 0-1,"P12 stores a fraction (0.21-1.0); MIMIC-IV charts a percent and has no unit string (checked on the demo: 1,743 of 1,746 values are >= 21, median 40)"
+GCS,labevents,chartevents,,,GCS - Total,,,1,score 3-15,"d_items has no total-GCS item (only 220739, 223900, 223901 for the components); named after them"
+Glucose,labevents,labevents,50931,Blood,Glucose,Chemistry,mg/dL,1,mg/dL,
+HCO3,labevents,labevents,50882,Blood,Bicarbonate,Chemistry,mEq/L,1,mmol/L,1 mmol/L = 1 mEq/L for a monovalent ion
+HCT,labevents,labevents,51221,Blood,Hematocrit,Hematology,%,1,%,
+HR,labevents,chartevents,220045,,Heart Rate,,bpm,1,bpm,
+K,labevents,labevents,50971,Blood,Potassium,Chemistry,mEq/L,1,mEq/L,
+Lactate,labevents,labevents,50813,Blood,Lactate,Blood Gas,mmol/L,1,mmol/L,
+MAP,labevents,chartevents,220052,,Arterial Blood Pressure mean,,mmHg,1,mmHg,
+MechVent,labevents,procedureevents,225792,,Invasive Ventilation,,,1,0/1 (only 1 occurs),P12 does not tell invasive from non-invasive ventilation; the value is always 1
+Mg,labevents,labevents,50960,Blood,Magnesium,Chemistry,mg/dL,1,mmol/L (documented),"the P12 documentation says mmol/L but the values (median 2.0, p99 3.2) are mg/dL, the MIMIC-IV unit: no conversion"
+NIDiasABP,labevents,chartevents,220180,,Non Invasive Blood Pressure diastolic,,mmHg,1,mmHg,
+NIMAP,labevents,chartevents,220181,,Non Invasive Blood Pressure mean,,mmHg,1,mmHg,
+NISysABP,labevents,chartevents,220179,,Non Invasive Blood Pressure systolic,,mmHg,1,mmHg,
+Na,labevents,labevents,50983,Blood,Sodium,Chemistry,mEq/L,1,mEq/L,
+PaCO2,labevents,labevents,50818,Blood,pCO2,Blood Gas,mm Hg,1,mmHg,MIMIC-IV writes the lab unit 'mm Hg' (with a space; the chart items use 'mmHg')
+PaO2,labevents,labevents,50821,Blood,pO2,Blood Gas,mm Hg,1,mmHg,MIMIC-IV writes the lab unit 'mm Hg' (with a space; the chart items use 'mmHg')
+Platelets,labevents,labevents,51265,Blood,Platelet Count,Hematology,K/uL,1,cells/nL,1 cells/nL = 1 K/uL
+RespRate,labevents,chartevents,220210,,Respiratory Rate,,insp/min,1,breaths/min,
+SaO2,labevents,labevents,50817,Blood,Oxygen Saturation,Blood Gas,%,1,%,
+SysABP,labevents,chartevents,220050,,Arterial Blood Pressure systolic,,mmHg,1,mmHg,
+Temp,labevents,chartevents,223762,,Temperature Celsius,,°C,1,°C,MIMIC-IV also has Temperature Fahrenheit (223761); the Celsius item is used
+TroponinI,labevents,labevents,51002,Blood,Troponin I,Chemistry,ng/mL,1,ug/L,"1 ug/L = 1 ng/mL; no troponin I row in the MIMIC-IV demo, the unit is taken from the MIMIC-IV documentation"
+TroponinT,labevents,labevents,51003,Blood,Troponin T,Chemistry,ng/mL,1,ug/L,1 ug/L = 1 ng/mL
+Urine,labevents,outputevents,226559,,Foley,,mL,1,mL,the main urine-output item of d_items (Category Output)
+WBC,labevents,labevents,51301,Blood,White Blood Cells,Hematology,K/uL,1,cells/nL,1 cells/nL = 1 K/uL
+pH,labevents,labevents,50820,Blood,pH,Blood Gas,units,1,pH,

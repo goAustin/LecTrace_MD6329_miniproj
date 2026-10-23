@@ -1,0 +1,9 @@
+
+# lectrace
+_site/
+.lectrace_cache.json
+__pycache__/
+*.pyc
+.DS_Store
+
+PRESENTER_NOTES.md

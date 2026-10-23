@@ -1,0 +1,247 @@
+{
+ "_source": "excerpt of dl_proj/results/llemr/numeric_sensitivity.json (frozen BiomedBERT-large [CLS] cosines of the 9 probe texts)",
+ "encoder": "microsoft/BiomedNLP-BiomedBERT-large-uncased-abstract",
+ "encoder_revision": "f18ff5ec008285849e7c467b2618262b0def6238",
+ "texts": [
+  {
+   "variable": "Lactate",
+   "level": "low",
+   "raw_value": 0.5,
+   "text": "Blood Lactate Blood Gas: 0.5 mmol/L"
+  },
+  {
+   "variable": "Lactate",
+   "level": "normal",
+   "raw_value": 1.5,
+   "text": "Blood Lactate Blood Gas: 1.5 mmol/L"
+  },
+  {
+   "variable": "Lactate",
+   "level": "high",
+   "raw_value": 8.0,
+   "text": "Blood Lactate Blood Gas: 8 mmol/L"
+  },
+  {
+   "variable": "MAP",
+   "level": "low",
+   "raw_value": 45.0,
+   "text": "Arterial Blood Pressure mean: 45 mmHg"
+  },
+  {
+   "variable": "MAP",
+   "level": "normal",
+   "raw_value": 80.0,
+   "text": "Arterial Blood Pressure mean: 80 mmHg"
+  },
+  {
+   "variable": "MAP",
+   "level": "high",
+   "raw_value": 130.0,
+   "text": "Arterial Blood Pressure mean: 130 mmHg"
+  },
+  {
+   "variable": "HR",
+   "level": "low",
+   "raw_value": 40.0,
+   "text": "Heart Rate: 40 bpm"
+  },
+  {
+   "variable": "HR",
+   "level": "normal",
+   "raw_value": 75.0,
+   "text": "Heart Rate: 75 bpm"
+  },
+  {
+   "variable": "HR",
+   "level": "high",
+   "raw_value": 150.0,
+   "text": "Heart Rate: 150 bpm"
+  }
+ ],
+ "within_variable": [
+  {
+   "a": "Lactate low",
+   "b": "Lactate normal",
+   "cosine": 0.9994975294538042
+  },
+  {
+   "a": "Lactate low",
+   "b": "Lactate high",
+   "cosine": 0.9955792466759881
+  },
+  {
+   "a": "Lactate normal",
+   "b": "Lactate high",
+   "cosine": 0.995772093845986
+  },
+  {
+   "a": "MAP low",
+   "b": "MAP normal",
+   "cosine": 0.9986974000760384
+  },
+  {
+   "a": "MAP low",
+   "b": "MAP high",
+   "cosine": 0.9971168893172381
+  },
+  {
+   "a": "MAP normal",
+   "b": "MAP high",
+   "cosine": 0.9983163826466639
+  },
+  {
+   "a": "HR low",
+   "b": "HR normal",
+   "cosine": 0.9954666177774364
+  },
+  {
+   "a": "HR low",
+   "b": "HR high",
+   "cosine": 0.9943556870011013
+  },
+  {
+   "a": "HR normal",
+   "b": "HR high",
+   "cosine": 0.9970459496506274
+  }
+ ],
+ "between_variables": [
+  {
+   "a": "Lactate low",
+   "b": "MAP low",
+   "cosine": 0.9429076712624685
+  },
+  {
+   "a": "Lactate low",
+   "b": "MAP normal",
+   "cosine": 0.9419358193784702
+  },
+  {
+   "a": "Lactate low",
+   "b": "MAP high",
+   "cosine": 0.9379666337385433
+  },
+  {
+   "a": "Lactate low",
+   "b": "HR low",
+   "cosine": 0.9225694215810489
+  },
+  {
+   "a": "Lactate low",
+   "b": "HR normal",
+   "cosine": 0.9288732845350893
+  },
+  {
+   "a": "Lactate low",
+   "b": "HR high",
+   "cosine": 0.9300720467268528
+  },
+  {
+   "a": "Lactate normal",
+   "b": "MAP low",
+   "cosine": 0.9432341522434187
+  },
+  {
+   "a": "Lactate normal",
+   "b": "MAP normal",
+   "cosine": 0.9420348299789314
+  },
+  {
+   "a": "Lactate normal",
+   "b": "MAP high",
+   "cosine": 0.9383297045208806
+  },
+  {
+   "a": "Lactate normal",
+   "b": "HR low",
+   "cosine": 0.9221435817457518
+  },
+  {
+   "a": "Lactate normal",
+   "b": "HR normal",
+   "cosine": 0.9288507136688358
+  },
+  {
+   "a": "Lactate normal",
+   "b": "HR high",
+   "cosine": 0.9301001998920041
+  },
+  {
+   "a": "Lactate high",
+   "b": "MAP low",
+   "cosine": 0.9409850540720016
+  },
+  {
+   "a": "Lactate high",
+   "b": "MAP normal",
+   "cosine": 0.9402018818691984
+  },
+  {
+   "a": "Lactate high",
+   "b": "MAP high",
+   "cosine": 0.9356027492611572
+  },
+  {
+   "a": "Lactate high",
+   "b": "HR low",
+   "cosine": 0.9204293210371868
+  },
+  {
+   "a": "Lactate high",
+   "b": "HR normal",
+   "cosine": 0.9269110550665902
+  },
+  {
+   "a": "Lactate high",
+   "b": "HR high",
+   "cosine": 0.926916154959539
+  },
+  {
+   "a": "MAP low",
+   "b": "HR low",
+   "cosine": 0.9603422042787927
+  },
+  {
+   "a": "MAP low",
+   "b": "HR normal",
+   "cosine": 0.9632668679062911
+  },
+  {
+   "a": "MAP low",
+   "b": "HR high",
+   "cosine": 0.9632475349480031
+  },
+  {
+   "a": "MAP normal",
+   "b": "HR low",
+   "cosine": 0.9621109213150599
+  },
+  {
+   "a": "MAP normal",
+   "b": "HR normal",
+   "cosine": 0.9654897467074562
+  },
+  {
+   "a": "MAP normal",
+   "b": "HR high",
+   "cosine": 0.9657689112226773
+  },
+  {
+   "a": "MAP high",
+   "b": "HR low",
+   "cosine": 0.962581556437532
+  },
+  {
+   "a": "MAP high",
+   "b": "HR normal",
+   "cosine": 0.9649981436784416
+  },
+  {
+   "a": "MAP high",
+   "b": "HR high",
+   "cosine": 0.9665112825160466
+  }
+ ],
+ "mean_within_variable": 0.9968719773827649,
+ "mean_between_variables": 0.9434956090573432
+}
