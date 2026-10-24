@@ -17,6 +17,9 @@ pip install lectrace numpy matplotlib
 lectrace serve        # http://localhost:7000
 ```
 
+On macOS, port 7000 is often taken by AirPlay Receiver ("Address already in use"); run
+`lectrace serve --port 7001` and open http://localhost:7001 instead.
+
 To build a static site into `_site/`: `lectrace build --output _site`.
 
 ## Data
