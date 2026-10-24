@@ -2,7 +2,7 @@
 
 LecTrace does not trace files whose name starts with an underscore, so the bulk numpy code lives here and the lecture
 shows only the steps that matter.  Nothing is simulated: the weights are the trained `no_llm` checkpoint of the project
-(checkpoints/no_llm_s1.pt, converted to .npz by tools/export_weights.py), the patient is test patient 139655 of split 1,
+(checkpoints/no_llm_s1.pt, converted to .npz), the patient is test patient 139655 of split 1,
 and every "recorded" number is read from a result file in ./data (the `_source` field of each file names its origin).
 """
 
@@ -129,14 +129,6 @@ def load_events() -> list[Event]:
     assert np.allclose([math.log1p((e.minute - e.previous_minute) / 60.0) for e in events], t["dt"], atol=1e-5)
     assert np.allclose([e.minute / 2880.0 for e in events], t["t_abs"], atol=1e-6)
     return events
-
-
-def raw_record_lines(first: int, last: int) -> str:
-    """The lines of the raw patient file (time, parameter, value) that became events first..last."""
-    rows = [r for r in read_csv(PATIENT / "observations_raw.csv") if r["event_index"] != ""]
-    keep = [r for r in rows if first <= int(r["event_index"]) <= last]
-    keep.sort(key=lambda r: int(r["event_index"]))
-    return "Time,Parameter,Value\n" + "\n".join(f"{r['time']},{r['parameter']},{r['value']}" for r in keep)
 
 
 def event_table(events: list[Event], chart: Chart, first: int, last: int) -> list[dict]:
